@@ -1,0 +1,107 @@
+/*-----------------------------------*/
+/*---------- INITIAL SETUP ----------*/
+/*-----------------------------------*/
+:root {
+	--color-primary: #ff1e00;
+
+	--color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Prompt', sans-serif;
+	min-height: 100vh;
+}
+
+/*-----------------------------*/
+/*---------- TOP NAV ----------*/
+/*-----------------------------*/
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255,30,0,0.92);
+	padding-left: 3.5rem;
+	padding-right: 3.5rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.nav-logo img {
+	max-width: 15rem;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: var(--color-grey-light-1);
+	font-size: 1.6rem;
+	padding: 2.5rem;
+}
+
+.nav-links a:hover {
+	
+}
+
+.nav-contact i {
+	font-size: 3rem;
+	color: var(--color-grey-light-1);
+}
+
+/*----------------------------*/
+/*---------- HEADER ----------*/
+/*----------------------------*/
+#hero-area {
+	max-width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#hero-area img {
+	max-width: 100%;
+}
+
+
+
+
+
+section:nth-child(even) {
+	background-color: var(--color-grey-light-2);
+	height: 75vh;
+}
+
+section:nth-child(odd) {
+	background-color: var(--color-grey-light-1);
+	height: 75vh;
+}
+
+footer {
+	background-color: var(--color-grey-light-4);
+	height: 30rem;
+}
+
+
